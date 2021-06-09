@@ -1,17 +1,35 @@
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.block_index {
-    margin: 0 auto;
+/* ОСНОВА СТРАНИЦЫ */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 750px;
 
     background: linear-gradient(to top, #eee 15px, #333751) no-repeat;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/* МЕНЮШКА СВЕРХУ */
 .header {
     width: 100%;
     position: absolute;
@@ -29,7 +47,7 @@
     align-items: center;
 }
 
-.index_logo {
+.logo {
     width: 100px;
 
     font-family: 'Oswald', sans-serif;
@@ -46,7 +64,7 @@
     color: #66697e;
 }
 
-.index_nav {
+.nav {
     font-family: 'Noto Serif', serif;
     font-size: 14px;
     color: #eee;
@@ -68,16 +86,36 @@
     color: #f36223;
 }
 
-body {
-    margin: 0;
+/* ТИТУЛЬНИК */
+.intro_image {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+
+    background: url("../images/index_cover.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
 }
 
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
+.subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: initial;
+    color: #eee;
+    text-align: right;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: initial;
+    color: #eee;
 }
