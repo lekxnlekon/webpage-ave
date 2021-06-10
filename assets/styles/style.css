@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     height: 500px;
+    text-align: right;
 
     background: url("../images/index_cover.png") no-repeat;
     -webkit-background-size: cover;
@@ -114,8 +115,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
+    display: inline-block;
+    margin: 15% 10%;
+    padding: 5px 15px;
+    background-color: #f36223;
+    border-radius: 15px;
+
     font-family: 'Oswald', sans-serif;
-    font-size: 14px;
+    font-size: 32px;
     font-weight: initial;
-    color: #eee;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: box-shadow .1s linear;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px #333751;
 }
